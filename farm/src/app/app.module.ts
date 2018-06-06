@@ -10,6 +10,7 @@ import { InvestmentsComponent } from './investments/investments.component';
 import { OpenbidComponent } from './openbid/openbid.component';
 import { VisionComponent } from './vision/vision.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     InvestmentsComponent,
     OpenbidComponent,
     VisionComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
