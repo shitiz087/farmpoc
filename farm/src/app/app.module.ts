@@ -11,6 +11,7 @@ import { OpenbidComponent } from './openbid/openbid.component';
 import { VisionComponent } from './vision/vision.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductpageComponent } from './productpage/productpage.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     OpenbidComponent,
     VisionComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ProductpageComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'faq', component: FaqComponent },
       { path: 'investments', component: InvestmentsComponent },
       { path: 'openbid', component: OpenbidComponent },
-      { path: 'vision', component: VisionComponent }
+      { path: 'vision', component: VisionComponent },
+      {path:'productpage',component:ProductpageComponent}
 
     ])
   ],
