@@ -19,22 +19,29 @@
         <a class="nav-link" routerLink="/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" routerLink="/faq">FAQ</a>
+        <a class="nav-link" routerLink="/faq">FAQ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" routerLink="/investments">Investments</a>
+        <a class="nav-link " routerLink="/investments">Investments</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" routerLink="/openbid">Openbid</a>
+        <a class="nav-link" routerLink="/openbid">Openbid</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" routerLink="/vision">Vision</a>
+        <a class="nav-link" routerLink="/vision">Vision</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" *ngIf="!uname">Login</a>
+        <a class="nav-link"  style="cursor:pointer;" *ngIf="uname" (click)="logout()">Logout</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="/signup" *ngIf="!uname">Signup</a>
       </li>
 
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <div class=" my-2 my-lg-0" *ngIf="uname">
+      <p> hello {{uname}}</p>
+    </div>
   </div>
 </nav>

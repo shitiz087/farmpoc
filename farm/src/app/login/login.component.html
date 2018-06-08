@@ -1,0 +1,48 @@
+<navbar></navbar>
+<div class="container" style="padding-top:70px;">
+<div class="container py-5">
+  <div class="row">
+      <div class="col-md-12">
+          
+          <div class="row">
+              <div class="col-md-6 mx-auto">
+
+                  <!-- form card login -->
+                   <br>
+                  <div class="card rounded-0">
+                      <div class="card-header">
+                          <h1 class="mb-0" align="center">Login</h1>
+                      </div>
+                      <div class="card-body">
+                          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                              <div class="form-group">
+                                  <label for="user_name"><h5>Username: </h5></label>
+                                  <input type="text" class="form-control form-control-lg rounded-0" ngModel name="user_name" id="user_name" required>
+                                  <div class="invalid-feedback">Oops, you missed this one.</div>
+                              </div>
+                              <div class="form-group">
+                                  <label><h5> Password:</h5></label>
+                                  <input type="password" class="form-control form-control-lg rounded-0" ngModel name="password" id="password" required >
+                                  <div class="invalid-feedback">Enter your password too!</div>
+                              </div> 
+                              <button type="submit" class="btn btn-success  float-right"  [disabled]="!f.valid"> Submit </button>
+                          </form>
+                      </div>
+                      <!--/card-block-->
+                  </div>
+                  <!-- /form card login -->
+
+              </div>
+
+
+          </div>
+          <!--/row-->
+
+      </div>
+      <!--/col-->
+  </div>
+  <!--/row-->
+</div>
+<!--/container-->
+</div>
+<footer></footer>

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,6 +14,11 @@ import { VisionComponent } from './vision/vision.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductpageComponent } from './productpage/productpage.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { Productpage2Component } from './productpage2/productpage2.component';
+import { Productpage3Component } from './productpage3/productpage3.component';
+import { Productpage4Component } from './productpage4/productpage4.component';
 
 
 @NgModule({
@@ -25,9 +32,15 @@ import { ProductpageComponent } from './productpage/productpage.component';
     VisionComponent,
     HomeComponent,
     FooterComponent,
-    ProductpageComponent
+    ProductpageComponent,
+    LoginComponent,
+    SignupComponent,
+    Productpage2Component,
+    Productpage3Component,
+    Productpage4Component
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -36,7 +49,12 @@ import { ProductpageComponent } from './productpage/productpage.component';
       { path: 'investments', component: InvestmentsComponent },
       { path: 'openbid', component: OpenbidComponent },
       { path: 'vision', component: VisionComponent },
-      {path:'productpage',component:ProductpageComponent}
+      { path: 'maizefarm', component: ProductpageComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent },
+      { path: 'ricefarm', component: Productpage2Component },
+      { path: 'soyabeansfarm', component: Productpage3Component },
+      { path: 'poultaryfarm', component: Productpage4Component }
 
     ])
   ],
