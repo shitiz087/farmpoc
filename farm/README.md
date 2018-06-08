@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
+### Configuration
+
+Download and install git
+Download and install nodejs https://nodejs.org
+
+Note: Make sure you have Node version >= 8.11.0 and NPM >= 5.6.0
+
+Once you have those, you should install these globals with `npm install` 
+if any error for nom occurs then execute `npm cache clear --force`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
