@@ -22,7 +22,7 @@
         <a class="nav-link" routerLink="/faq">FAQ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " routerLink="/investments">Investments</a>
+        <a class="nav-link " routerLink="/investments" *ngIf="uname">Investments</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/openbid">Openbid</a>
