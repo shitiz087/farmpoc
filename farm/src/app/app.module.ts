@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -19,6 +19,7 @@ import { SignupComponent } from './signup/signup.component';
 import { Productpage2Component } from './productpage2/productpage2.component';
 import { Productpage3Component } from './productpage3/productpage3.component';
 import { Productpage4Component } from './productpage4/productpage4.component';
+import { ProfilepageComponent } from './profilepage/profilepage.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { Productpage4Component } from './productpage4/productpage4.component';
     SignupComponent,
     Productpage2Component,
     Productpage3Component,
-    Productpage4Component
+    Productpage4Component,
+    ProfilepageComponent
   ],
   imports: [
     FormsModule,
@@ -54,7 +56,8 @@ import { Productpage4Component } from './productpage4/productpage4.component';
       { path: 'signup', component: SignupComponent },
       { path: 'ricefarm', component: Productpage2Component },
       { path: 'soyabeansfarm', component: Productpage3Component },
-      { path: 'poultaryfarm', component: Productpage4Component }
+      { path: 'poultaryfarm', component: Productpage4Component },
+      { path: 'profilepage', component: ProfilepageComponent },       
 
     ])
   ],
