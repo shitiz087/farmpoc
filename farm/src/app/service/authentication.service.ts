@@ -21,10 +21,9 @@ export class AuthenticationService {
 
 }
 
-
-  signIn(formName: string, user: any) {
-
-    const headers = new Headers({ 'Content-Type': 'application/json'});
+ signIn(formName: string, user: any) {
+    let headers = new Headers();
+    headers.append("Accept","application/json");
     return this.http.post(this.hostUrl + formName, JSON.stringify(user), { headers: headers })
         .map(response => {
             let result = response.json();
@@ -32,12 +31,12 @@ export class AuthenticationService {
 
         }
 
+
+
         )
 
 
-
-
 }
- 
-   
+
+
 }
