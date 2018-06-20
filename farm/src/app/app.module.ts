@@ -1,3 +1,4 @@
+import { AuthenticationService } from './service/authentication.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -20,6 +21,7 @@ import { Productpage2Component } from './productpage2/productpage2.component';
 import { Productpage3Component } from './productpage3/productpage3.component';
 import { Productpage4Component } from './productpage4/productpage4.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -42,6 +44,7 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
     ProfilepageComponent
   ],
   imports: [
+    HttpModule,
     FormsModule,
     BrowserModule,
     RouterModule.forRoot([
@@ -61,7 +64,7 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
 
     ])
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
